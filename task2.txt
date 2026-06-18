@@ -1,0 +1,42 @@
+// Java Program to Demonstrate OOP Concepts
+
+class Student {
+    // Data Members (Attributes)
+    String name;
+    int age;
+
+    // Constructor
+    Student(String n, int a) {
+        name = n;
+        age = a;
+    }
+
+    // Method to display student details
+    void display() {
+        System.out.println("Name: " + name);
+        System.out.println("Age: " + age);
+    }
+
+    // Method to study
+    void study() {
+        System.out.println(name + " is studying.");
+    }
+}
+
+public class OOPDemo {
+    public static void main(String[] args) {
+
+        // Creating Objects
+        Student s1 = new Student("Rahul", 20);
+        Student s2 = new Student("Priya", 19);
+
+        // Calling Methods
+        s1.display();
+        s1.study();
+
+        System.out.println();
+
+        s2.display();
+        s2.study();
+    }
+}
